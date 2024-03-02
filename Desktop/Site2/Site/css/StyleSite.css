@@ -243,11 +243,12 @@ margin-bottom: 20px;
 
   }
   
-.titre_apropos
+.titre_apropos h2
 {
   color: black;
 }
 .imgapropos
 {
   height: 350px;
+  width: 100%;
 }
