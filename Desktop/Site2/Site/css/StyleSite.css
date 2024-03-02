@@ -45,7 +45,7 @@ header
     
     height: 110px; 
     
-    background-color: #cfd2d6de;
+  
 }
 
 
@@ -72,7 +72,7 @@ header
     float : right ; 
 }
 
-#menu > ul  /*le > veut dire aue sa sera appliquer juste pour ul parrent le 1 er ul  */
+#menu > ul  /*le > veut dire que sa sera appliquer juste pour ul parrent le 1 er ul  */
 {
 
 display: flex; /* horizontal*/
