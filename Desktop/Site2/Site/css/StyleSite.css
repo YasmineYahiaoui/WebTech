@@ -34,7 +34,10 @@ ul
 list-style: none;
  
 }
-
+.main h2 
+{
+  color: #faf8f8;
+}
 /* Header ***********************************/
 header
 {
