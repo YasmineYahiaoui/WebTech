@@ -252,3 +252,8 @@ margin-bottom: 20px;
   height: 400px;
   width: 100%;
 }
+.contact h3
+{
+text-align: center;
+font-size: large;
+}
