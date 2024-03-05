@@ -217,6 +217,28 @@ margin-bottom: 20px;
   #contact button[type="submit"]:hover {
     background-color: #3e8e41;
   }
+  
+  .titre_apropos 
+{
+  color: black;
+}
+.imgapropos
+{
+  height: 400px;
+  width: 100%;
+}
+.contact h3
+{
+text-align: center;
+font-size: large;
+}
+#contactImg img{
+
+  width: 350px;
+  height: 150px ;
+float: right;
+margin: auto;
+}
   /* Footer ********/
 
   footer
@@ -243,24 +265,3 @@ margin-bottom: 20px;
 
   }
   
-.titre_apropos 
-{
-  color: black;
-}
-.imgapropos
-{
-  height: 400px;
-  width: 100%;
-}
-.contact h3
-{
-text-align: center;
-font-size: large;
-}
-#contactImg img {
-
-  width: 50px;
-  height: 50px;
-position: absolute;
-right: 0;
-}
