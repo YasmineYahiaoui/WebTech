@@ -257,3 +257,6 @@ margin-bottom: 20px;
 text-align: center;
 font-size: large;
 }
+#contactImg img {
+  background-position: right;
+}
