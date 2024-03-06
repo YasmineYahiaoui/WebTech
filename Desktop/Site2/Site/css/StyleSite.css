@@ -91,11 +91,13 @@ display: flex; /* horizontal*/
 
 .sous-menu
 {
+  position: fixed;
 display: none;
 background-color: #faf8f8;
 }
 .sous-menu li a:hover
 {
+  
     background-color: rgb(146, 169, 189);
 
 }
