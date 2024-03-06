@@ -10,12 +10,12 @@
 body
 {
     font-family: 'inter' ;/* @import url sur css  .. police de google */
-   
+    text-align: justify;
 }
 
 .main
 {
-   
+ 
     width: 980; /*largeur */
     margin: 0 auto; /*aucune marge  de haut a bas , auto quand c'est centrer  */
     padding: 0 10px; /* le contenue ne sera pas coller au bord */
@@ -257,6 +257,11 @@ font-size: large;
   flex: 1;  /* l espace du p */
   font-size: 18px;
 
+}
+/*****a propos          *****/
+.titre_apropos{
+  text-align: center;
+  font-size: 40px;
 }
   /* Footer ********/
 
