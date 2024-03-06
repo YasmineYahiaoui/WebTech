@@ -232,6 +232,10 @@ margin-bottom: 20px;
 text-align: center;
 font-size: large;
 }
+.contact
+{
+  text-align: left;
+}
 #contactImg img{
 
   width: 350px;
