@@ -239,7 +239,7 @@ font-size: large;
 #contactImg img{
 
   width: 350px;
-  height: 150px ;
+  height: 300px ;
 float: right;
 margin: auto;
 }
@@ -247,7 +247,7 @@ margin: auto;
 
   footer
   {
-    height: 260px;
+    height: 170px;
     background-color: rgba(86, 86, 90, 0.851);
     
   }
@@ -255,7 +255,7 @@ margin: auto;
   {
     color: white;
    text-align: center;
-    padding-top: 80px;
+    padding-top: 40px;
     font-family: 'crete Round', serif; 
     font-size: 45px;
 
@@ -265,7 +265,7 @@ margin: auto;
     text-align: center;
     font-weight: bold;
     color: black;
-    padding-top: 30px;
+    padding-top: 20px;
 
   }
   
