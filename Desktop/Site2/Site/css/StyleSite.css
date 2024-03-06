@@ -148,6 +148,7 @@ margin-bottom: 20px;
     font-size: 18px;
   }
   
+  
   .step img {
     width: 120px;
     height: 120px;
@@ -236,12 +237,26 @@ font-size: large;
 {
   text-align: left;
 }
-#contactImg img{
+.maps {
 
-  width: 350px;
-  height: 300px ;
-float: right;
-margin: auto;
+  padding: 40px;
+  display: flex; /* horizontal*/
+  justify-content: space-between; 
+}
+.map img 
+{
+  float: right;
+  width: 420px;
+  height: 320px;
+  margin-bottom: 20px;
+  
+}
+.map
+{
+ 
+  flex: 1;  /* l espace du p */
+  font-size: 18px;
+
 }
   /* Footer ********/
 
