@@ -19,7 +19,12 @@ body
     width: 980; /*largeur */
     margin: 0 auto; /*aucune marge  de haut a bas , auto quand c'est centrer  */
     padding: 0 10px; /* le contenue ne sera pas coller au bord */
+    border-radius: 25px;
    
+}
+
+.FooterD {
+  height: 100px;
 }
 
 
@@ -101,19 +106,24 @@ background-color: #faf8f8;
     background-color: rgb(146, 169, 189);
 
 }
+
+a:hover {
+  background-color: rgb(68, 109, 156);
+  border-radius: 25px;
+}
+
 .a-sous-menu:hover .sous-menu
 {
 display: block;
 }
 /*main image*/
 /*Cybersécurité*/
-#main-image
-{
-    height: 350px;
-    background: url(../image/security.jpg);
-    background-repeat: repeat;
-    
-    background-position: center;
+#main-image {
+  height: 450px;
+  background: url(../image/security.jpg);
+
+  border-radius: 25px;
+background-size: cover;
 }
 #main-image h2
 {
@@ -123,27 +133,26 @@ text-align: center;
 padding: 100px 0 30px 0;
 margin-bottom: 20px;
 }
-.Cybersécurité
-{
-    display: block;
-    width: 180px;
-    height: 50px;
-    background: orange;
-    color: white;
-    font-size: 20px;
-    margin: 0 auto;
-    line-height: 50px;
-    text-align: center;
-    border-radius: 3px;
-} 
+.Cybersécurité {
+  display: block;
+  width: 180px;
+  height: 50px;
+  background: white;
+  color: black;
+  font-size: 20px;
+  margin: 0 auto;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 25px;
+}
   /*************************************steps**********************/
-  .steps {
-    margin-top: 40px;
-    padding: 40px;
-    display: flex; /* horizontal*/
-    justify-content: space-between; 
-     height: 350px;
-  }
+.steps {
+
+  padding: 40px;
+  display: flex;
+  /* horizontal*/
+  justify-content: space-between;
+}
   
   .step {
     text-align: center;
@@ -170,10 +179,11 @@ margin-bottom: 20px;
 
 /*..........................................*/
 #contact {
-    background-color: rgb(201, 225, 235);
-    padding: 50px;
-    text-align: center;
-  }
+  background-color: rgb(201, 225, 235);
+  padding: 50px;
+  text-align: center;
+  border-radius: 25px;
+}
   
   #contact h3 {
     font-size: 36px;
@@ -295,27 +305,147 @@ font-size: large;
 }
   /* Footer ********/
 
-  footer
-  {
-    height: 170px;
-    background-color: rgba(86, 86, 90, 0.851);
-    
-  }
-  footer h2
-  {
-    color: white;
-   text-align: center;
-    padding-top: 40px;
-    font-family: 'crete Round', serif; 
-    font-size: 45px;
+ /* Footer ********/
+footer {
+  height: 150px;
+}
 
+footer h2 {
+  color: black;
+  text-align: center;
+  background-color: white;
+
+
+  font-family: 'crete Round', serif;
+  font-size: 45px;
+  padding-top: 30px;
+
+
+}
+
+.copyright {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+
+
+}
+
+.titre_apropos {
+  color: black;
+}
+
+.imgapropos {
+  height: 400px;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  #main-image {
+    height: 300px;
   }
-  .copyright
-  {
+}
+
+@media screen and (max-width: 600px) {
+  .steps {
+    flex-direction: column;
+  }
+
+  .step {
+    margin: 20px 0;
     text-align: center;
-    font-weight: bold;
-    color: black;
-    padding-top: 20px;
-
   }
-  
+
+  .step img {
+    width: 100%;
+    height: auto;
+  }
+
+  .step h3 {
+    font-size: 24px;
+  }
+
+  .step p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .headerD .main h1 {
+    font-size: 24px;
+  }
+  .headerD #menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .headerD #menu ul li {
+    margin: 10px 0;
+  }
+  .headerD #menu ul .sous-menu {
+    padding-left: 20px;
+  }
+  #main-image {
+    height: 200px;
+  }
+  #main-image h2 {
+    font-size: 18px;
+    padding: 50px 0 15px 0;
+  }
+  .Cybersécurité {
+    width: 120px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .headerD #menu ul {
+ 
+    flex-direction: column;
+    position: absolute;
+  }
+  .headerD #menu ul li {
+    width: 100%;
+  }
+  .headerD #menu ul li:hover > ul {
+    display: block;
+  }
+  .headerD #menu ul .sous-menu {
+    display: none;
+    position: relative;
+    background-color: #444;
+  }
+  .headerD #menu ul .a-sous-menu:hover > .sous-menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  #contact {
+    padding: 25px;
+    text-align: center;
+  }
+  #contact h3 {
+    font-size: 24px;
+  }
+  #contact p {
+    font-size: 16px;
+  }
+  #contact label {
+    font-size: 16px;
+  }
+  #contact input[type="text"], #contact input[type="email"] {
+    font-size: 14px;
+  }
+  #contact button[type="submit"] {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  footer {
+    height: 100px;
+  }
+  footer h2 {
+    font-size: 30px;
+  }
+  .copyright {
+    font-size: 14px;
+  }
+}
