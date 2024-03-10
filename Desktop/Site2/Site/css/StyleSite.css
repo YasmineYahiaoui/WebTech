@@ -297,6 +297,14 @@ margin-bottom: 20px;
     background-color: #45a049; /* Changement de couleur au survol */
 }
   /***************************************************/
+  .main a
+  {
+    text-decoration: none;
+  }
+ .main  a:visited {
+    color: inherit; /* ou la couleur que vous souhaitez */
+    text-decoration: none; /* pour supprimer le soulignement du lien */
+}
   .titre_apropos 
 {
   color: black;
