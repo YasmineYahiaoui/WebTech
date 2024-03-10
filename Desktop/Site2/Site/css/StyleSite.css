@@ -205,7 +205,7 @@ margin-bottom: 20px;
     margin-bottom: 10px;
   }
   
-  #contact input[type="text"], #contact input[type="email"] {
+  #contact input[type="text"], #contact input[type="email"]  {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -215,6 +215,7 @@ margin-bottom: 20px;
   }
   
   #contact button[type="submit"] {
+    width: 100%; /* Définir la largeur du bouton sur 100% */
     background-color: #4CAF50;
     color: white;
     padding: 15px 32px;
@@ -225,13 +226,77 @@ margin-bottom: 20px;
     margin-top: 20px;
     cursor: pointer;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px; 
   }
+  
+  
+  
+  
   
   #contact button[type="submit"]:hover {
     background-color: #3e8e41;
+    width: 100%;
   }
   
+  /*******************************************************/
+  #contact2 {
+    background-color: rgb(232, 239, 248);
+    padding: 50px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+#contact2 h3 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+#contact2 p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#contact2 form {
+    display: inline-block;
+}
+
+#contact2 .form-group {
+    margin-bottom: 20px;
+}
+
+#contact2 label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#contact2 input[type="text"],
+#contact2 input[type="email"],
+#contact2 textarea {
+    width: calc(100% - 30px); /* Largeur moins la largeur des bordures */
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Inclure les bordures dans la largeur */
+}
+
+#contact2 button[type="submit"] {
+    width: calc(100% - 30px);
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Ajout d'une transition pour l'effet de survol */
+}
+
+#contact2 button[type="submit"]:hover {
+    background-color: #45a049; /* Changement de couleur au survol */
+}
+  /***************************************************/
   .titre_apropos 
 {
   color: black;
@@ -303,6 +368,7 @@ font-size: large;
   text-align: center;
   font-size: 40px;
 }
+
   /* Footer ********/
 
  /* Footer ********/
