@@ -27,7 +27,9 @@ body
   height: 100px;
 }
 
-
+.main a {
+  text-decoration: none; /* les (a) ne seront pas souligner */
+}
 /*********************************************************/
 a
 {
@@ -311,7 +313,7 @@ margin-bottom: 20px;
 }
 .main .imgapropos
 {
- height: 350px;
+ height: 450px;
   width: 100%;
   border-radius: 3%;
 }
@@ -428,6 +430,58 @@ font-size: large;
   text-align: center;
 }
 
+/*************************************/
+
+.hero {
+  background-image: url('hero-image.jpg');
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #111417;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color:#111417
+}
+
+.button {
+  display: inline-block;
+  background-color: #303b7c;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #3367aa;
+}
+
+.process, .pricing {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.process h2, .pricing h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.process ol {
+  list-style-type: none;
+}
+
+.process ol li {
+  margin-bottom: 10px;
+}
 
 
   /* Footer ********/
