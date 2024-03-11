@@ -376,7 +376,37 @@ font-size: large;
   text-align: center;
   font-size: 40px;
 }
+/*****creatio site web style ****/
+.contenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
 
+.texte {
+  flex: 1;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.bouton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.bouton:hover {
+  background-color: #0056b3;
+}
   /* Footer ********/
 
  /* Footer ********/
@@ -414,6 +444,15 @@ footer h2 {
   width: 100%;
 }
 
+
+
+
+
+
+
+
+
+/*********************************************************************************************************************/
 @media screen and (max-width: 600px) {
   #main-image {
     height: 300px;
