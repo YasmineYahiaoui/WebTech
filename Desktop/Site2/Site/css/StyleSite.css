@@ -311,8 +311,9 @@ margin-bottom: 20px;
 }
 .main .imgapropos
 {
- height: 500px;
+ height: 350px;
   width: 100%;
+  border-radius: 3%;
 }
 .contact h3
 {
@@ -388,25 +389,46 @@ font-size: large;
   flex: 1;
 }
 
-.image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
+.contenu .image img  {
+  max-width: 500px;
+  height: 360px;
+ 
 }
 
 .bouton {
-  display: inline-block;
+  display: block; /* Change le bouton en bloc pour appliquer les marges automatiques */
+  width: fit-content; /* Ajuste la largeur du bouton à son contenu */
+  margin: 20px auto; /* Ajoute des marges automatiques en haut et en bas, et centre horizontalement */
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #111417;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  margin-top: 20px;
 }
 
 .bouton:hover {
   background-color: #0056b3;
 }
+
+.texte .spangras 
+{
+
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  color: rgb(65, 65, 114);
+}
+.Pcolor
+{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #493e9d;
+}
+
+.contenu h2{
+  margin: 20px auto;
+  text-align: center;
+}
+
+
+
   /* Footer ********/
 
  /* Footer ********/
@@ -443,12 +465,6 @@ footer h2 {
   height: 400px;
   width: 100%;
 }
-
-
-
-
-
-
 
 
 
