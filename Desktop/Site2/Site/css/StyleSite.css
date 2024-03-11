@@ -9,7 +9,7 @@
 /*body */
 body
 {
-    font-family: 'inter' ;/* @import url sur css  .. police de google */
+    font-family:'inter', sans-serif ;/* @import url sur css  .. police de google */
     
 }
 
