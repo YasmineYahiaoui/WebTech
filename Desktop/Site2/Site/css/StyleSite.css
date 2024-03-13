@@ -554,17 +554,17 @@ footer h2 {
   }
 }
 @media screen and (max-width: 600px) {
-  .headerD .main h1 {
+  .header .main h1 {
     font-size: 24px;
   }
-  .headerD #menu ul {
+  .header #menu ul {
     flex-direction: column;
     align-items: center;
   }
-  .headerD #menu ul li {
+  .header #menu ul li {
     margin: 10px 0;
   }
-  .headerD #menu ul .sous-menu {
+  .header #menu ul .sous-menu {
     padding-left: 20px;
   }
   #main-image {
@@ -582,23 +582,23 @@ footer h2 {
   }
 }
 @media screen and (max-width: 600px) {
-  .headerD #menu ul {
+  .header #menu ul {
  
     flex-direction: column;
     position: absolute;
   }
-  .headerD #menu ul li {
+  .header #menu ul li {
     width: 100%;
   }
-  .headerD #menu ul li:hover > ul {
+  .header #menu ul li:hover > ul {
     display: block;
   }
-  .headerD #menu ul .sous-menu {
+  .header #menu ul .sous-menu {
     display: none;
     position: relative;
     background-color: #444;
   }
-  .headerD #menu ul .a-sous-menu:hover > .sous-menu {
+  .header #menu ul .a-sous-menu:hover > .sous-menu {
     display: block;
   }
 }
