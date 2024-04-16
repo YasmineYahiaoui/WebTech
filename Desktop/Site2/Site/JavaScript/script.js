@@ -14,7 +14,7 @@ window.onload = function() {
     init();
 
     // Initialisation
-       // Initialisation
+       // juste un test 
     function init() {
         var canvas = document.createElement('canvas');
         canvas.width = canvasWidth;
