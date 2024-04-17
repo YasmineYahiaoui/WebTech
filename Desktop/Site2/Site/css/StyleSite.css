@@ -117,6 +117,21 @@ header
  
 
 /*menu*****************/
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+}
 
 #menu
 {
@@ -571,7 +586,7 @@ footer h2 {
 
 
 /*********************************************************************************************************************/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 817px) {
   #main-image {
     height: 300px;
   }
@@ -599,7 +614,59 @@ footer h2 {
   .step p {
     font-size: 16px;
   }
+
+  #menu {
+    display: none; /* Cache le menu sur les écrans plus petits */
+    position: fixed; /* Fixe le menu par rapport à la fenêtre du navigateur */
+    top: 30px;
+    right: 0;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.777);
+    z-index: 1002;
+  }
+
+  #menu > ul {
+    flex-direction : column;
+  }
+
+  #menu li {
+    display : block;
+    text-align: center;
+  }
+
+  .a-sous-menu:hover .sous-menu {
+    display : block;
+    position: fixed;
+    top: 110px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.777);
+    width: 50%;
+  }
+
+  .hamburger {
+    display: block; /* Affiche l'icône hamburger sur les petits écrans */
+    position: fixed;
+    top: 30px;
+    right: 0;
+    z-index: 1003;
+  }
+
+  #menu.active {
+    display : block;
+  }
+
+  header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  main {
+    padding-top: 100px;
+  }
 }
+
 @media screen and (max-width: 600px) {
   .header .main h1 {
     font-size: 24px;
@@ -628,6 +695,7 @@ footer h2 {
     line-height: 30px;
   }
 }
+
 @media screen and (max-width: 600px) {
   .header #menu ul {
  
