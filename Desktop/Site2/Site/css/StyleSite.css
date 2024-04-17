@@ -592,7 +592,7 @@ footer h2 {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 817px) {
   .steps {
     flex-direction: column;
   }
