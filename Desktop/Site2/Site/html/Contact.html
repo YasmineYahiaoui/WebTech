@@ -9,7 +9,6 @@
     <title>WebTech Solutions</title>
 </head>
                 <!--** creation de notre page html  -->
-    <!--test-->
 <body>
 
 <header>
@@ -84,18 +83,18 @@
     <div id="contact2">
       <h3>Contactez Nous</h3>
       <p>N'hésitez pas à nous contacter pour toute question ou demande de renseignements.</p>
-      <form>
+      <form novalidate>
           <div class="form-group">
               <label for="nom">Nom :</label>
-              <input type="text" id="nom" name="nom" required>
+              <input type="text" id="nom" name="nom" >
           </div>
           <div class="form-group">
               <label for="email">Email :</label>
-              <input type="email" id="email" name="email" required>
+              <input type="email" id="email" name="email"  >
           </div>
           <div class="form-group">
               <label for="message">Message :</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
+              <textarea id="message" name="message" rows="5" ></textarea>
           </div>
           <button type="submit">Envoyer</button>
       </form>
@@ -114,3 +113,8 @@
   </footer>
   </body>
   </html>
+
+
+  <script src="../JavaScript/Form.js"></script>
+
+ 
