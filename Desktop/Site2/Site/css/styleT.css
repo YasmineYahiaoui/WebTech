@@ -20,7 +20,22 @@ body {
     padding: 0 10px; 
 }
 
+ /* Menu Hamburger */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
 
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+}
 
 .main a {
   text-decoration: none;
@@ -38,6 +53,8 @@ ul
 
 header
 {   
+    background-color: white;
+    width: 100%;
     grid-column: 1/5;
     grid-row: 1/2;
 }
@@ -63,6 +80,7 @@ header
     position: sticky;
     float : right; 
     z-index: 2;
+    display: grid;
 }
 
 #menu > ul
@@ -101,6 +119,7 @@ a:hover {
 {
     display: block;
 }
+
 
 #accroche {
     margin: 0 auto;
@@ -217,7 +236,7 @@ footer h2 {
     color: black;
 }
 
-@media (max-width:768px) {
+@media (max-width:817px) {
     body {
         grid-template-columns: 1fr;
         width: 100%;
@@ -253,6 +272,62 @@ footer h2 {
         grid-column: 1/3;
         grid-row: 9/11;
     }
+    footer {
+        grid-column: 1/3;
+        grid-row: 11/12;
+    }
+
+    #menu {
+        display: none; /* Cache le menu sur les écrans plus petits */
+        position: fixed; /* Fixe le menu par rapport à la fenêtre du navigateur */
+        top: 30px;
+        right: 0;
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0.777);
+        z-index: 1002;
+    }
+
+    #menu > ul {
+        flex-direction : column;
+    }
+
+    #menu li {
+        display : block;
+        text-align: center;
+    }
+
+    .a-sous-menu:hover .sous-menu {
+        display : block;
+        position: fixed;
+        top: 110px;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.777);
+        width: 50%;
+    }
+
+
+    .hamburger {
+        display: block; /* Affiche l'icône hamburger sur les petits écrans */
+        position: fixed;
+        top: 30px;
+        right: 0;
+        z-index: 1003;
+    }
+
+    #menu.active {
+        display : block;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    #accroche {
+        padding-top : 100px;
+    }
+}
     footer {
         grid-column: 1/3;
         grid-row: 11/12;
