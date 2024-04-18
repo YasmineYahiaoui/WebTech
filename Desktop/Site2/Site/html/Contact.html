@@ -1,120 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/StyleSite.css">
-    <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/StyleSite.css">
+        <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap" rel="stylesheet">
+        <title>Contact</title>
+    </head>
+    <body>
+        <header>
+            <div class="main">
+                <a href="SiteWeb.html">
+                    <h1>WebTech <span class="bleu">.</span></h1>
+                </a>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="SiteWeb.html">Accueil</a></li>
+                        <li class="a-sous-menu"><a href="#services">Services</a>
+                            <ul class="sous-menu">
+                                <li><a href="creationSite.html">Création de sites web</a></li>
+                                <li><a href="conceptionLogos.html">Conception de logos</a></li>
+                                <li ><a href="cybersecurite.html">Cybersécurité</a></li>
+                                <li><a href="jeu.html">Creation des jeux</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="temoins.html">Témoignages</a></li>
+                        <li><a href="tarifs.html">Tarifs</a></li>
+                        <li><a href="apropos.html">À Propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="main">
+                <div class="contact animationGauche">
+                    <h3>
+                        POUR NOUS JOINDRE
+                    </h3>
+                </div>
+                <br>
+                <div class="main animationDroite">
+                    <section class="maps">
+                        <div class="map">
+                            <p> <strong>Adresse:</strong> 801 Aviation ParkWay, Ottawa, ON K1K 4R3, Canada </p>
+                            <br>
+                            <p><strong>Telephone :</strong> 613 000 1111 </p>
+                            <br>
+                            <p><strong>Sana frais:</strong> 613 000 2222</p>
+                            <br>
+                            <p><strong>Adresse electronique: </strong>Contact@WebTech.ca</p>
+                            <br>
+                            <br>
+                            <h3>Heures d’ouverture</h3>
+                            <br>
+                            <p><strong>Du lundi au vendredi 8 h à 17 h</strong></p>
+                            <br>
+                            <p>À l’exception des journées fériées</p>
+                            <br>
+                            <p>Un service d’urgence est également disponible.</p>
+                            <br>
+                        </div>
+                        <div class="map">
+                            <img src="../image/contact.png" alt="map">
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="main">
+                <section >
+                    <div id="contact2" class="animationGauche">
+                        <h3>Contactez Nous</h3>
+                        <p>N'hésitez pas à nous contacter pour toute question ou demande de renseignements.</p>
+                        <form novalidate>
+                            <div class="form-group">
+                                <label for="nom">Nom :</label>
+                                <input type="text" id="nom" name="nom" >
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email :</label>
+                                <input type="email" id="email" name="email"  >
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message :</label>
+                                <textarea id="message" name="message" rows="5" ></textarea>
+                            </div>
+                            <button type="submit">Envoyer</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <h2>WebTech <span class="bleu">.</span></h2>
+            <div class="copyright"> copyright © 2024. </div>
+            <div class="copyright"> Développé par : yasmine , Anya , nacer eddine , mohammed salah </div>
+        </footer>
 
-    <title>WebTech Solutions</title>
-</head>
-                <!--** creation de notre page html  -->
-<body>
-
-<header>
-    <div class="main">
-                    <!-- logo -->
-
-                    <a href="SiteWeb.html">
-                        <h1>WebTech <span class="bleu">.</span></h1>
-                          </a>
-
-                <!-- creation de menu -->
-
-      <nav id="menu">
-        <ul>
-            <li><a href="SiteWeb.html">Accueil</a></li>
-            <li class="a-sous-menu"><a href="#services">Services</a>
-            <ul class="sous-menu">
-                <li><a href="creationSite.html">Création de sites web</a></li>
-                <li><a href="conceptionLogos.html">Conception de logos</a></li>
-                <li ><a href="cybersecurite.html">Cybersécurité</a></li>
-                <li><a href="jeu.html">Creation des jeux</a></li>
-            </ul>
-            </li>
-            <li><a href="temoins.html">Témoignages</a></li>
-            <li><a href="tarifs.html">Tarifs</a></li>
-            <li><a href="apropos.html">À Propos</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-</header>
-<main>
-<div class="main">
-    <div class="contact">
-<h3>
-    POUR NOUS JOINDRE
-</h3>
-</div>
-
-<br>
-  <div class="main">
-    <section class="maps">
-    <div class="map">
-    <p> <strong>Adresse:</strong> 801 Aviation ParkWay, Ottawa, ON K1K 4R3, Canada </p>
-    <br>
-    <p><strong>Telephone :</strong> 613 000 1111 </p>
-    <br>
-    <p><strong>Sana frais:</strong> 613 000 2222</p>
-    <br>
-    <p><strong>Adresse electronique: </strong>Contact@WebTech.ca</p>
-    <br>
-    <br>
-   <h3>Heures d’ouverture</h3>
-   <br>
-
-<p> <strong>Du lundi au vendredi 8 h à 17 h</strong></p>
-<br>
-<p>À l’exception des journées fériées</p>
-<br>
-<p>Un service d’urgence est également disponible.</p>
-<br>
-</div>
-<div class="map">
-    <img src="../image/contact.png" alt="map">
-</div>
-</section>
-</div>
-
-</div>
-<div class="main">
-  <section >
-    <div id="contact2">
-      <h3>Contactez Nous</h3>
-      <p>N'hésitez pas à nous contacter pour toute question ou demande de renseignements.</p>
-      <form novalidate>
-          <div class="form-group">
-              <label for="nom">Nom :</label>
-              <input type="text" id="nom" name="nom" >
-          </div>
-          <div class="form-group">
-              <label for="email">Email :</label>
-              <input type="email" id="email" name="email"  >
-          </div>
-          <div class="form-group">
-              <label for="message">Message :</label>
-              <textarea id="message" name="message" rows="5" ></textarea>
-          </div>
-          <button type="submit">Envoyer</button>
-      </form>
-  </div>
-
-
-
-  </section>
-</div>
-
-</main>
-<footer>
-    <h2>WebTech <span class="bleu">.</span></h2>
-  <div class="copyright"> copyright © 2024. </div>
-  <div class="copyright"> Développé par : yasmine , Anya , nacer eddine , mohammed salah </div>
-  </footer>
-  </body>
-  </html>
-
-
-  <script src="../JavaScript/Form.js"></script>
-
- 
+        <script src="../JavaScript/Form.js"></script>
+    </body>
+</html>
