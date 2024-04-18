@@ -3,41 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tarifs</title>
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/StyleSite.css">
 </head>
+
 <body>
     <header>
         <div class="main">
-                        <!-- logo -->
-                        <a href="SiteWeb.html">
-                  <h1>WebTech <span class="bleu">.</span></h1>
-                    </a>
-                   <!-- creation de menu -->
-                    <!-- creation de menu -->
-
-          <nav id="menu">
-            <ul>
-                <li><a href="SiteWeb.html">Accueil</a></li>
-                <li class="a-sous-menu"><a href="#services">Services</a>
-                <ul class="sous-menu">
-                    <li><a href="creationSite.html">Création de sites web</a></li>
-                    <li><a href="conceptionLogos.html">Conception de logos</a></li>
-                    <li ><a href="cybersecurite.html">Cybersécurité</a></li>
-                    <li><a href="jeu.html">Creation des jeux</a></li>
+            <a href="SiteWeb.html">
+                <h1>WebTech <span class="bleu">.</span></h1>
+            </a>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="SiteWeb.html">Accueil</a></li>
+                    <li class="a-sous-menu"><a href="#services">Services</a>
+                        <ul class="sous-menu">
+                            <li><a href="creationSite.html">Création de sites web</a></li>
+                            <li><a href="conceptionLogos.html">Conception de logos</a></li>
+                            <li ><a href="cybersecurite.html">Cybersécurité</a></li>
+                            <li><a href="jeu.html">Creation des jeux</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="temoins.html">Témoignages</a></li>
+                    <li><a href="tarifs.html">Tarifs</a></li>
+                    <li><a href="apropos.html">À Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-                </li>
-                <li><a href="temoins.html">Témoignages</a></li>
-                <li><a href="tarifs.html">Tarifs</a></li>
-                <li><a href="apropos.html">À Propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
+            </nav>
         </div>
     </header>
 
-    <!--*********Class Tarifs***********-->
+    <!--****Class Tarifs****-->
     <div class="tarifs">
         <div class="ts">
             <h3>Création SitesWeb</h3> <br>
@@ -58,15 +60,13 @@
             <h4>Site Web E-commerce :</h4>
                 <ul>
                     <li>Prix: À partir de 2000 à 10 000 dollars</li>
-                    <li>Description: Lancez votre boutique en ligne avec un site web sécurisé et fonctionnel. 
-                    </li>
+                    <li>Description: Lancez votre boutique en ligne avec un site web sécurisé et fonctionnel.</li>
                 </ul>
 
             <h4>Site Web sur Mesure :</h4>
                 <ul>
                     <li>Prix: Sur Devis</li>
                     <li>Description: Un site web entièrement personnalisé répondant à vos besoins spécifiques.</li>
-
                 </ul>
 
             <h4>Maintenance et Support :</h4>
@@ -138,7 +138,6 @@
                 <ul>
                     <li>Prix: Entre 500 et 2000 dollars </li>
                     <li>Description: Évaluation de base de la sécurité informatique.</li>
-
                 </ul>
                 <h4>Audit de Sécurité Avancé :</h4>
                 <ul>
@@ -179,11 +178,11 @@
     </div>
 
     <footer>
-
         <h2>WebTech <span class="bleu">.</span></h2>
         <div class="copyright"> copyright © 2024.</div>
         <div class="copyright"> Développé par : yasmine , Anya , nacer eddine , mohammed salah </div>
+    </footer>
 
-        </footer>
+    <script src="../javascript/hamburger.js></script>
 </body>
 </html>
