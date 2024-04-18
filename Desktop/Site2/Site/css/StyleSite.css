@@ -67,7 +67,9 @@ li {
     margin: 0 auto; /*aucune marge  de haut a bas , auto quand c'est centrer  */
     padding: 0 10px; /* le contenue ne sera pas coller au bord */
     border-radius: 25px;
-   
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideInRight 1.5s forwards;
 }
 
 .FooterD {
@@ -77,7 +79,7 @@ li {
 .main a {
   text-decoration: none; /* les (a) ne seront pas souligner */
 }
-/*********************************************************/
+/*******************/
 a
 {
     text-decoration: none; /* les (a) ne seront pas souligner */
@@ -92,7 +94,7 @@ list-style: none;
 {
   color: #faf8f8;
 }
-/* Header ***********************************/
+/* Header *************/
 header
 {
     
@@ -102,7 +104,7 @@ header
 }
 
 
-/*Logo*****************/
+/Logo******/
 .main h1
 {
     margin-top: 32px; /* marge de haut de 32px */
@@ -116,7 +118,22 @@ header
 }
  
 
-/*menu*****************/
+/menu******/
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+}
 
 #menu
 {
@@ -137,7 +154,7 @@ display: flex; /* horizontal*/
     color: black;
     display: block;
     text-transform: uppercase; /*maj */
-    font-weight: bold;       /*gras*/
+    font-weight: bold;       /gras/
     margin-right: 2px;   /* nous elements seront espacer de 20px */
     padding: 7px ; /* 10 de haut au bas et 20 gauche a droit de notre block*/
 }
@@ -165,8 +182,8 @@ a:hover {
 {
 display: block;
 }
-/*main image*/
-/*Cybersécurité*/
+/main image/
+/Cybersécurité/
 #main-image {
   height: 450px;
   background: url(../image/Accueil.jpg);
@@ -194,13 +211,16 @@ margin-bottom: 20px;
   text-align: center;
   border-radius: 25px;
 }
-  /*************************************steps**********************/
+  /************steps*******/
 .steps {
 
   padding: 40px;
   display: flex;
   /* horizontal*/
-  justify-content: space-between;
+    justify-content: space-between;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideInLeft 2s forwards;
 }
   
   .step {
@@ -224,14 +244,29 @@ margin-bottom: 20px;
   .step p {
     line-height: 1.5;
   }
+  
+  /* Animation d'entrée de la gauche */
+  @keyframes slideInLeft {
+    0% { opacity: 0; transform: translateX(-100%); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  
+  /* Animation d'entrée de la droite */
+  @keyframes slideInRight {
+    0% { opacity: 0; transform: translateX(100%); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
 
 
-/*..........................................*/
+/........................................../
 #contact {
   background-color: rgb(201, 225, 235);
   padding: 50px;
   text-align: center;
   border-radius: 25px;
+  opacity: 0;
+    transform: translateX(-100%); 
+    animation: slideInRight 2.5s forwards;
 }
   
   #contact h3 {
@@ -287,7 +322,7 @@ margin-bottom: 20px;
     width: 100%;
   }
   
-  /*******************************************************/
+  /*******************/
   #contact2 {
     background-color: rgb(232, 239, 248);
     padding: 50px;
@@ -345,7 +380,7 @@ margin-bottom: 20px;
 #contact2 button[type="submit"]:hover {
     background-color: #45a049; /* Changement de couleur au survol */
 }
-  /***************************************************/
+  /*****************/
   .main a
   {
     text-decoration: none;
@@ -396,7 +431,7 @@ font-size: large;
   font-size: 18px;
 
 }
-/***************************************/
+/*************/
 .scrts
 { padding: 40px;
   display: flex; /* horizontal*/
@@ -421,12 +456,12 @@ font-size: large;
   font-size: large;
   text-align: center;
 }
-/*****a propos          *****/
+/**a propos          **/
 .titre_apropos{
   text-align: center;
   font-size: 40px;
 }
-/*****creatio site web style ****/
+/**creatio site web style ***/
 .contenu {
   display: flex;
   align-items: center;
@@ -477,7 +512,7 @@ font-size: large;
   text-align: center;
 }
 
-/*************************************/
+/*************/
 
 .hero {
   background-image: url('hero-image.jpg');
@@ -531,9 +566,9 @@ font-size: large;
 }
 
 
-  /* Footer ********/
+  /* Footer ****/
 
- /* Footer ********/
+ /* Footer ****/
 footer {
   height: 150px;
 }
@@ -570,14 +605,12 @@ footer h2 {
 
 
 
-/*********************************************************************************************************************/
-@media screen and (max-width: 600px) {
+/***************************************/
+@media screen and (max-width: 817px) {
   #main-image {
     height: 300px;
   }
-}
 
-@media screen and (max-width: 600px) {
   .steps {
     flex-direction: column;
   }
@@ -599,8 +632,58 @@ footer h2 {
   .step p {
     font-size: 16px;
   }
-}
-@media screen and (max-width: 600px) {
+
+  #menu {
+    display: none;
+    position: fixed;
+    top: 30px;
+    right: 0;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.777);
+    z-index: 1002;
+  }
+
+  #menu > ul {
+    flex-direction : column;
+  }
+
+  #menu li {
+    display : block;
+    text-align: center;
+  }
+
+  .a-sous-menu:hover .sous-menu {
+    display : block;
+    position: fixed;
+    top: 110px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.777);
+    width: 50%;
+  }
+
+  .hamburger {
+    display: block; /* Affiche l'icône hamburger sur les petits écrans */
+    position: fixed;
+    top: 30px;
+    right: 0;
+    z-index: 1003;
+  }
+
+  #menu.active {
+    display : block;
+  }
+
+  header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  main {
+    padding-top: 100px;
+  }
+
   .header .main h1 {
     font-size: 24px;
   }
@@ -627,8 +710,7 @@ footer h2 {
     font-size: 16px;
     line-height: 30px;
   }
-}
-@media screen and (max-width: 600px) {
+
   .header #menu ul {
  
     flex-direction: column;
@@ -648,8 +730,7 @@ footer h2 {
   .header #menu ul .a-sous-menu:hover > .sous-menu {
     display: block;
   }
-}
-@media screen and (max-width: 600px) {
+
   #contact {
     padding: 25px;
     text-align: center;
