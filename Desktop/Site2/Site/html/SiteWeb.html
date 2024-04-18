@@ -9,12 +9,8 @@
 
   <title>WebTech Solutions</title>
 </head>
-<!--** creation de notre page html  -->
-
-<!-- Bonjour, jsute un test -->
 
 <body>
-
   <header>
     <div class="main">
       <!-- logo -->
@@ -54,17 +50,17 @@
   <!-- body -->
   <main>
     <div class="main">
-      <section id="main-image">
+      <section id="main-image" class="animationDroite">
         <div>
           <h2>Vos systèmes et données sont-ils <br> à l'abri des cybercriminels?</h2>
-          <a href="cybersecurite.html" class="Cybersécurité"> En savoir plus </a>
+          <a href="cybersecurite.html" class="Cybersécurité animate-fade-in"> En savoir plus </a>
         </div>
       </section>
     </div>
 
     <!--**********************steps******************-->
     <div>
-      <div class="steps">
+      <div class="steps animationGauche">
         <div class="step">
           <img src="../image/step1-icon.jpg" alt="Step 1 icon">
           <h3>Consultation</h3>
@@ -86,7 +82,7 @@
       </div>
     </div>
     <!--***************************************************-->
-    <div class="main">
+    <div class="animationDroite">
       <section id="contact">
         <h3>CONNEXION</h3>
         <p>Chez l'Agence Webtech, nous comprenons que la création d'un site web représente un investissement financier
@@ -98,13 +94,11 @@
             <input type="text" id="name" name="name">
           </div>
 
-          <!-- le role de  required ici  (nom ) , le nom doit pas etre  vide  -->
           <div>
             <label for="email"> Email:</label><br>
             <input type="email" id="email" name="email"><br>
           </div>
 
-          <!-- le role de  required dans l'adresse e-mail, on doit rajouter le @   -->
           <div> <button type="submit" name="submit">CONNEXION</button></div>
 
 
@@ -119,7 +113,7 @@
     <div class="copyright"> copyright © 2024.</div>
     <div class="copyright"> Développé par : yasmine , Anya , nacer eddine , mohammed salah </div>
   </footer>
+  <script src="../JavaScript/animation.js"></script>
+  <script src="../JavaScript/Form.js"></script>
 </body>
-
 </html>
-<script src="../JavaScript/Form.js"></script>
