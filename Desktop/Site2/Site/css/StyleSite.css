@@ -36,6 +36,11 @@ body
 	animation: slideInLeft 1.5s forwards;
 }
 
+.animationBas {
+  opacity: 0;
+	transform: translateX(-100%);
+	animation: slideInDown 1.5s forwards;
+}
 /* Animation d'entrée par la gauche */
 @keyframes slideInLeft {
   0% { opacity: 0; transform: translateX(-100%); }
@@ -45,6 +50,11 @@ body
 /* Animation d'entrée par la droite */
 @keyframes slideInRight {
   0% { opacity: 0; transform: translateX(100%); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInDown {
+  0% { opacity: 0; transform: translateY(100%); }
   100% { opacity: 1; transform: translateX(0); }
 }
 
@@ -437,8 +447,6 @@ font-size: large;
 .scrts
 { padding: 40px;
   display: flex; /* horizontal*/
- 
-
 }
 .scrt
 {
@@ -606,7 +614,6 @@ footer h2 {
 }
 
 
-
 /*********************************************************************************************************************/
 @media screen and (max-width: 817px) {
   #main-image {
@@ -735,6 +742,28 @@ footer h2 {
 
   .tarifs {
     flex-direction: column;
+  }
+
+  .scrt h3 {
+    padding-top: 50px;
+  }  
+
+  .scrts {
+    flex-direction: column;
+  }
+
+  .contenu {
+    flex-direction: column;
+  }
+
+  .ts {
+    opacity: 0;
+	  transform: translateX(-100%);
+	  animation: slideInLeft 1.5s forwards;
+  }
+
+  .contact h3 {
+    padding-top: 50px;
   }
 
   #contact {
