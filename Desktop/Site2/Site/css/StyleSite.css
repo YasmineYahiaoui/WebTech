@@ -22,9 +22,31 @@ body
   max-width: 1200px;
   padding: 20px;
   box-sizing: border-box;
-
 }
 
+/* Animations */
+.animationDroite {
+  opacity: 0;
+	transform: translateX(-100%);
+	animation: slideInRight 1.5s forwards;
+}
+.animationGauche {
+  opacity: 0;
+	transform: translateX(-100%);
+	animation: slideInLeft 1.5s forwards;
+}
+
+/* Animation d'entrée par la gauche */
+@keyframes slideInLeft {
+  0% { opacity: 0; transform: translateX(-100%); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* Animation d'entrée par la droite */
+@keyframes slideInRight {
+  0% { opacity: 0; transform: translateX(100%); }
+  100% { opacity: 1; transform: translateX(0); }
+}
 
 .tarifs > div {
   flex: 1;
@@ -67,7 +89,6 @@ li {
     margin: 0 auto; /*aucune marge  de haut a bas , auto quand c'est centrer  */
     padding: 0 10px; /* le contenue ne sera pas coller au bord */
     border-radius: 25px;
-   
 }
 
 .FooterD {
@@ -138,6 +159,7 @@ header
     margin-top: 40px;
     position: sticky ;
     float : right ; 
+    z-index: 1005;
 }
 
 #menu > ul  /*le > veut dire que sa sera appliquer juste pour ul parrent le 1 er ul  */
@@ -215,7 +237,7 @@ margin-bottom: 20px;
   padding: 40px;
   display: flex;
   /* horizontal*/
-  justify-content: space-between;
+    justify-content: space-between;
 }
   
   .step {
@@ -590,9 +612,7 @@ footer h2 {
   #main-image {
     height: 300px;
   }
-}
 
-@media screen and (max-width: 817px) {
   .steps {
     flex-direction: column;
   }
@@ -616,8 +636,8 @@ footer h2 {
   }
 
   #menu {
-    display: none; /* Cache le menu sur les écrans plus petits */
-    position: fixed; /* Fixe le menu par rapport à la fenêtre du navigateur */
+    display: none;
+    position: fixed;
     top: 30px;
     right: 0;
     width: 50%;
@@ -665,9 +685,7 @@ footer h2 {
   main {
     padding-top: 100px;
   }
-}
 
-@media screen and (max-width: 600px) {
   .header .main h1 {
     font-size: 24px;
   }
@@ -694,9 +712,7 @@ footer h2 {
     font-size: 16px;
     line-height: 30px;
   }
-}
 
-@media screen and (max-width: 600px) {
   .header #menu ul {
  
     flex-direction: column;
@@ -716,8 +732,11 @@ footer h2 {
   .header #menu ul .a-sous-menu:hover > .sous-menu {
     display: block;
   }
-}
-@media screen and (max-width: 600px) {
+
+  .tarifs {
+    flex-direction: column;
+  }
+
   #contact {
     padding: 25px;
     text-align: center;
