@@ -1,3 +1,4 @@
+/*contact*/
 document.addEventListener('DOMContentLoaded', function() {
  var form = document.querySelector('form');
  form.addEventListener('submit', function(event) {
@@ -20,6 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
      }
  });
 });
+
+/*page principale*/ 
 document.addEventListener('DOMContentLoaded', function() {
     var formulaire = document.querySelector('form');
     formulaire.addEventListener('submit', function(evenement) {
