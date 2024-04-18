@@ -14,5 +14,18 @@ Pour obtenir de l'aide sur notre projet WebTech, vous pouvez nous contacter par 
 ## Qui maintient et contribue au projet
 Le projet WebTech est maintenu par notre équipe interne de développeurs, de concepteurs et d'experts en cybersécurité. Nous travaillons constamment à améliorer nos services et à développer de nouvelles fonctionnalités pour répondre aux besoins changeants de nos clients. De plus, nous accueillons les contributions de la communauté et sommes ouverts à toute suggestion visant à améliorer notre projet.
 
+# Nouveautés
+## Ajout d'une page de jeu et implémentation de fonctionnalités
+Nous avons récemment enrichi notre application en ajoutant une toute nouvelle page de jeu. Cette page utilise JavaScript pour fournir une expérience interactive aux utilisateurs. Voici quelques détails sur les fonctionnalités que nous avons ajoutées :
+
+Page de jeu: Nous avons intégré une nouvelle page de jeu passionnante où les utilisateurs peuvent jouer à un jeu divertissant directement sur notre application.
+Menu hamburger: Pour une navigation fluide, nous avons inclus un menu hamburger qui permet aux utilisateurs d'accéder facilement à différentes parties de l'application, y compris la page de jeu.
+Animations améliorées: Nous avons également mis à jour les autres pages de l'application en ajoutant des animations attrayantes, créant ainsi une expérience utilisateur plus dynamique et engageante.
+
+# Optimisation pour les appareils mobiles
+Nous avons pris des mesures pour garantir que notre application offre une expérience utilisateur optimale sur les appareils mobiles. Voici ce que nous avons fait pour améliorer la visualisation sur les téléphones :
+
+Responsive Design: Nous avons rendu notre application compatible avec les appareils mobiles en utilisant des techniques de responsive design. Cela garantit que l'interface utilisateur s'adapte de manière fluide à différentes tailles d'écran, offrant ainsi une expérience cohérente sur tous les appareils, y compris les smartphones
+
 #### Auteurs
 Yasmine Yahiaoui, Mohamed Salah Haouam, Nacer Eddine Zidouni, Anya Gani.
