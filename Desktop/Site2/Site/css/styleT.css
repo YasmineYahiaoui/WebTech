@@ -8,6 +8,30 @@
     margin: 0;
 }
 
+/* Animations */
+.animationDroite {
+    opacity: 0;
+      transform: translateX(-100%);
+      animation: slideInRight 1.5s forwards;
+  }
+  .animationGauche {
+    opacity: 0;
+      transform: translateX(-100%);
+      animation: slideInLeft 1.5s forwards;
+  }
+  
+  /* Animation d'entrée par la gauche */
+  @keyframes slideInLeft {
+    0% { opacity: 0; transform: translateX(-100%); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  
+  /* Animation d'entrée par la droite */
+  @keyframes slideInRight {
+    0% { opacity: 0; transform: translateX(100%); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+
 body {
     font-family:'inter', sans-serif;
     font-size: 13px;
