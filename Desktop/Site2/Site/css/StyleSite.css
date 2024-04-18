@@ -22,9 +22,31 @@ body
   max-width: 1200px;
   padding: 20px;
   box-sizing: border-box;
-
 }
 
+/* Animations */
+.animationDroite {
+  opacity: 0;
+	transform: translateX(-100%);
+	animation: slideInRight 1.5s forwards;
+}
+.animationGauche {
+  opacity: 0;
+	transform: translateX(-100%);
+	animation: slideInLeft 1.5s forwards;
+}
+
+/* Animation d'entrée par la gauche */
+@keyframes slideInLeft {
+  0% { opacity: 0; transform: translateX(-100%); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* Animation d'entrée par la droite */
+@keyframes slideInRight {
+  0% { opacity: 0; transform: translateX(100%); }
+  100% { opacity: 1; transform: translateX(0); }
+}
 
 .tarifs > div {
   flex: 1;
@@ -67,9 +89,6 @@ li {
     margin: 0 auto; /*aucune marge  de haut a bas , auto quand c'est centrer  */
     padding: 0 10px; /* le contenue ne sera pas coller au bord */
     border-radius: 25px;
-    opacity: 0;
-    transform: translateX(-100%);
-    animation: slideInRight 1.5s forwards;
 }
 
 .FooterD {
@@ -79,7 +98,7 @@ li {
 .main a {
   text-decoration: none; /* les (a) ne seront pas souligner */
 }
-/*******************/
+/*********************************************************/
 a
 {
     text-decoration: none; /* les (a) ne seront pas souligner */
@@ -94,7 +113,7 @@ list-style: none;
 {
   color: #faf8f8;
 }
-/* Header *************/
+/* Header ***********************************/
 header
 {
     
@@ -104,7 +123,7 @@ header
 }
 
 
-/Logo******/
+/*Logo*****************/
 .main h1
 {
     margin-top: 32px; /* marge de haut de 32px */
@@ -118,7 +137,7 @@ header
 }
  
 
-/menu******/
+/*menu*****************/
 .hamburger {
   display: none;
   cursor: pointer;
@@ -140,6 +159,7 @@ header
     margin-top: 40px;
     position: sticky ;
     float : right ; 
+    z-index: 1005;
 }
 
 #menu > ul  /*le > veut dire que sa sera appliquer juste pour ul parrent le 1 er ul  */
@@ -154,7 +174,7 @@ display: flex; /* horizontal*/
     color: black;
     display: block;
     text-transform: uppercase; /*maj */
-    font-weight: bold;       /gras/
+    font-weight: bold;       /*gras*/
     margin-right: 2px;   /* nous elements seront espacer de 20px */
     padding: 7px ; /* 10 de haut au bas et 20 gauche a droit de notre block*/
 }
@@ -182,8 +202,8 @@ a:hover {
 {
 display: block;
 }
-/main image/
-/Cybersécurité/
+/*main image*/
+/*Cybersécurité*/
 #main-image {
   height: 450px;
   background: url(../image/Accueil.jpg);
@@ -211,16 +231,13 @@ margin-bottom: 20px;
   text-align: center;
   border-radius: 25px;
 }
-  /************steps*******/
+  /*************************************steps**********************/
 .steps {
 
   padding: 40px;
   display: flex;
   /* horizontal*/
     justify-content: space-between;
-    opacity: 0;
-    transform: translateX(-100%);
-    animation: slideInLeft 2s forwards;
 }
   
   .step {
@@ -244,29 +261,14 @@ margin-bottom: 20px;
   .step p {
     line-height: 1.5;
   }
-  
-  /* Animation d'entrée de la gauche */
-  @keyframes slideInLeft {
-    0% { opacity: 0; transform: translateX(-100%); }
-    100% { opacity: 1; transform: translateX(0); }
-  }
-  
-  /* Animation d'entrée de la droite */
-  @keyframes slideInRight {
-    0% { opacity: 0; transform: translateX(100%); }
-    100% { opacity: 1; transform: translateX(0); }
-  }
 
 
-/........................................../
+/*..........................................*/
 #contact {
   background-color: rgb(201, 225, 235);
   padding: 50px;
   text-align: center;
   border-radius: 25px;
-  opacity: 0;
-    transform: translateX(-100%); 
-    animation: slideInRight 2.5s forwards;
 }
   
   #contact h3 {
@@ -322,7 +324,7 @@ margin-bottom: 20px;
     width: 100%;
   }
   
-  /*******************/
+  /*******************************************************/
   #contact2 {
     background-color: rgb(232, 239, 248);
     padding: 50px;
@@ -380,7 +382,7 @@ margin-bottom: 20px;
 #contact2 button[type="submit"]:hover {
     background-color: #45a049; /* Changement de couleur au survol */
 }
-  /*****************/
+  /***************************************************/
   .main a
   {
     text-decoration: none;
@@ -431,7 +433,7 @@ font-size: large;
   font-size: 18px;
 
 }
-/*************/
+/***************************************/
 .scrts
 { padding: 40px;
   display: flex; /* horizontal*/
@@ -456,12 +458,12 @@ font-size: large;
   font-size: large;
   text-align: center;
 }
-/**a propos          **/
+/*****a propos          *****/
 .titre_apropos{
   text-align: center;
   font-size: 40px;
 }
-/**creatio site web style ***/
+/*****creatio site web style ****/
 .contenu {
   display: flex;
   align-items: center;
@@ -512,7 +514,7 @@ font-size: large;
   text-align: center;
 }
 
-/*************/
+/*************************************/
 
 .hero {
   background-image: url('hero-image.jpg');
@@ -566,9 +568,9 @@ font-size: large;
 }
 
 
-  /* Footer ****/
+  /* Footer ********/
 
- /* Footer ****/
+ /* Footer ********/
 footer {
   height: 150px;
 }
@@ -605,7 +607,7 @@ footer h2 {
 
 
 
-/***************************************/
+/*********************************************************************************************************************/
 @media screen and (max-width: 817px) {
   #main-image {
     height: 300px;
@@ -729,6 +731,10 @@ footer h2 {
   }
   .header #menu ul .a-sous-menu:hover > .sous-menu {
     display: block;
+  }
+
+  .tarifs {
+    flex-direction: column;
   }
 
   #contact {
